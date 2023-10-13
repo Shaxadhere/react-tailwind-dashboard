@@ -4,14 +4,7 @@ import { mainMenu } from "../../../config/constants/menus";
 import { BsGrid } from "react-icons/bs";
 import Sider from "./Sider";
 import Header from "./Header";
-
-const Content = () => {
-  return (
-    <div className="h-[calc(100vh-70px)]">
-      <h5>Content</h5>
-    </div>
-  );
-};
+import FormInput from "../../forms/FormInput";
 
 const AdminLayout = () => {
   return (
@@ -19,7 +12,11 @@ const AdminLayout = () => {
       <Sider />
       <div>
         <Header />
-        <Content />
+        <main className="p-[25px] h-[calc(100vh-70px)]">
+          <div className="maxw-[500px]">
+            <FormInput />
+          </div>
+        </main>
       </div>
     </div>
   );

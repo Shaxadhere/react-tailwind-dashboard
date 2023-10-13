@@ -5,8 +5,8 @@ import APP_IMAGES from "../../../config/constants/images";
 
 const Sider = () => {
   return (
-    <aside className="shadow-sm w-[75px]  h-[100vh]">
-      <div className="flex items-center justify-center h-[60px] shadow-md shadow-inner">
+    <aside className="w-[75px]  h-[100vh] border-r border-light-gray">
+      <div className="flex items-center justify-center h-[60px]">
         <img src={APP_IMAGES.Logo} className="w-[25px] h-[29px]" />
       </div>
       <div className="flex flex-col mt-[30px] gap-y-[20px] mx-[10px]">
