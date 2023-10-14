@@ -1,22 +1,21 @@
 import React from "react";
 import { mainMenu } from "../../../config/constants/menus";
-import { BsGrid } from "react-icons/bs";
-import APP_IMAGES from "../../../config/constants/images";
+import Icon from "../../content/Icon";
+import { Link } from "react-router-dom";
 
 const Sider = () => {
   return (
-    <aside className="w-[75px]  h-[100vh] border-r border-light-gray">
-      <div className="flex items-center justify-center h-[60px]">
-        <img src={APP_IMAGES.Logo} className="w-[25px] h-[29px]" />
-      </div>
+    <aside className="w-[75px]  h-[calc(100vh - 60px)] border-r border-light-gray">
       <div className="flex flex-col mt-[30px] gap-y-[20px] mx-[10px]">
         {mainMenu.map((item, index) => (
-          <div
-            key={index}
-            className="flex h-[50px] w-[50px] items-center justify-center m-[auto] hover:bg-[#f6f7ff]"
-          >
-            <BsGrid size={22} />
-          </div>
+          <Link to={item.link}>
+            <div
+              key={index}
+              className="flex h-[50px] w-[50px] items-center justify-center m-[auto] hover:bg-[#f6f7ff]"
+            >
+              <Icon as={item.icon} size={22} />
+            </div>
+          </Link>
         ))}
       </div>
     </aside>

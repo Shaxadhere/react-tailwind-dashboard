@@ -1,7 +1,7 @@
-import AdminLayout from "./components/layout/AdminLayout";
+import AppRouter from "./config/routes/AppRouter";
 
-function App() {
-  return <AdminLayout />;
-}
+const App = () => {
+  return <AppRouter />;
+};
 
 export default App;

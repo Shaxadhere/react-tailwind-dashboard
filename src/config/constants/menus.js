@@ -1,33 +1,58 @@
+import APP_ICONS from "./icons";
 
 export const mainMenu = [
     {
         title: "Dashboard",
-        icon: "",
+        icon: APP_ICONS.Dashboard,
         link: "/admin/dashboard",
     },
     {
-        title: "Courses",
-        icon: "",
-        link: "/admin/courses",
+        title: "Analytics",
+        icon: APP_ICONS.Analytics,
+        link: "/admin/analytics",
     },
     {
         title: "Candidates",
-        icon: "",
+        icon: APP_ICONS.User,
         link: "/admin/candidates",
     },
     {
+        title: "Videos",
+        icon: APP_ICONS.Videos,
+        link: "/admin/videos",
+    },
+    {
         title: "Chats",
-        icon: "",
+        icon: APP_ICONS.Chat,
         link: "/admin/chats",
     },
     {
         title: "Emails",
-        icon: "",
+        icon: APP_ICONS.Email,
         link: "/admin/emails",
     },
     {
         title: "Settings",
-        icon: "",
+        icon: APP_ICONS.Settings,
         link: "/admin/settings",
     },
 ];
+
+
+export const emailSubsider = [
+    {
+        icon: APP_ICONS.List,
+        title: "Emails",
+        link: "/admin/emails"
+    },
+    {
+        icon: APP_ICONS.List,
+        title: "Email Logs",
+        link: "/admin/emails/logs"
+    },
+    {
+        icon: APP_ICONS.List,
+        title: "Templates",
+        link: "/admin/emails/templates"
+    },
+]
