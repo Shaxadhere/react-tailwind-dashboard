@@ -10,7 +10,7 @@ const Subsider = ({ title, sidebarOptions }) => {
 
   return (
     <aside
-      className={`fixed h-[100vh] w-[240px] overflow-y-auto shadow-md p-[0.5rem]1 ${classNames(
+      className={`fixed h-[100vh] w-[240px] overflow-y-auto shadow-md p-[0.5rem] ${classNames(
         { hidden: !state?.subsider }
       )}`}
     >

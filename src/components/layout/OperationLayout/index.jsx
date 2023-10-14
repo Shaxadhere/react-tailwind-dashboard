@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Outlet } from "react-router";
-import classNames from "classnames";    
+import classNames from "classnames";
 import Subsider from "../AdminLayout/Subsider";
 import useSettings from "../../../config/zustand/settings.store";
 
@@ -11,9 +11,9 @@ const OperationLayout = ({ sidebarOptions, title }) => {
     <Fragment>
       <Subsider sidebarOptions={sidebarOptions} title={title} />
       <div
-        className={classNames({
+        className={`p-[10px] ${classNames({
           "w-[calc(100vw - 240px)] ml-[240px]": state?.subsider,
-        })}
+        })}`}
       >
         <Outlet />
       </div>
