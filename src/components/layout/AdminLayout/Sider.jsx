@@ -1,7 +1,5 @@
 import React from "react";
 import { mainMenu } from "../../../config/constants/menus";
-import Icon from "../../content/Icon";
-import { Link } from "react-router-dom";
 import SiderItem from "./SiderItem";
 
 const Sider = () => {
