@@ -13,7 +13,8 @@ export default {
       xl: '1440px',
     },
     colors: {
-      'blue': '#1fb6ff',
+      'primary': '#1fb6ff',
+      'primary-hover':'#e5f5ff',
       'purple': '#7e5bef',
       'pink': '#ff49db',
       'orange': '#ff7849',

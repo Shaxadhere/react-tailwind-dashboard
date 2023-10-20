@@ -26,6 +26,22 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
+        path: "analytics",
+        element: <Dashboard />,
+      },
+      {
+        path: "users",
+        element: <Dashboard />,
+      },
+      {
+        path: "videos",
+        element: <Dashboard />,
+      },
+      {
+        path: "chats",
+        element: <Dashboard />,
+      },
+      {
         path: "emails",
         element: (
           <OperationLayout title={"Emails"} sidebarOptions={emailSubsider} />
@@ -44,6 +60,10 @@ const router = createBrowserRouter([
             element: <Dashboard />,
           },
         ],
+      },
+      {
+        path: "settings",
+        element: <Dashboard />,
       },
     ],
   },

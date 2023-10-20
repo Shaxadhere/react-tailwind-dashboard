@@ -12,9 +12,9 @@ export const mainMenu = [
         link: "/admin/analytics",
     },
     {
-        title: "Candidates",
+        title: "Users",
         icon: APP_ICONS.User,
-        link: "/admin/candidates",
+        link: "/admin/users",
     },
     {
         title: "Videos",

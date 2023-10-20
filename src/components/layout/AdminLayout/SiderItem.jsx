@@ -16,8 +16,8 @@ const SiderItem = ({ link, icon }) => {
   return (
     <Link to={link}>
       <div
-        className={`flex h-[50px] w-[50px] items-center justify-center m-[auto] hover:bg-[#f6f7ff] ${classNames(
-          { "bg-[#f6f7ff]": isActive }
+        className={`flex h-[50px] w-[50px] items-center justify-center m-[auto] hover:bg-primary-hover hover:text-primary ${classNames(
+          { "bg-primary-hover text-primary": isActive }
         )}`}
         onClick={onClick}
       >
